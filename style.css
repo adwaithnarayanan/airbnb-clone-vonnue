@@ -12,7 +12,6 @@
 }
 
 body {
-  /* width: 320px; */
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
     Helvetica Neue, sans-serif;
   font-size: 0.875rem;
@@ -55,8 +54,6 @@ header .search-area {
   margin-top: 0px;
   justify-content: center;
   align-items: center;
-  /* display: flex; */
-  /* justify-content: center; */
 }
 
 header .search-width-744 {
@@ -66,11 +63,6 @@ header .search-width-744 {
 header button .search-icon {
   grid-column: 1/2;
   width: 50px;
-  /* display: flex; */
-  /* width: 100%; */
-  /* height: 100%; */
-  /* align-items: center; */
-  /* justify-content: center; */
 }
 
 .search-icon img {
@@ -83,8 +75,6 @@ header button .search-text {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  /* line-height: 1rem; */
-  /* letter-spacing: -0.01375rem; */
 }
 
 button .search-text .search-area-line1 {
@@ -112,19 +102,17 @@ menu {
   z-index: 3;
   top: 70px;
   background-color: white;
+  overflow-x: scroll;
+  scrollbar-width: none;
 }
 menu .slidebar {
   display: flex;
   gap: 6rem;
-  width: 600%;
-  /* padding-top: 20px; */
+  width: 150%;
   padding-top: 1.5em;
-  /* padding-left: 20px; */
   padding-left: 1.5rem;
   border-bottom: 0.1px solid rgb(238, 236, 236);
   gap: 1rem;
-  overflow: hidden;
-  overflow-x: scroll;
 }
 
 menu .slidebar-item {
@@ -158,7 +146,7 @@ main {
   padding: 0;
   width: 100%;
   display: block;
-  margin-top: 11.5em;
+  margin-top: 13em;
 }
 
 main .marble-section,
@@ -177,7 +165,6 @@ main .marble-section .marble {
 
 main .marble-section .marble-image {
   width: 100%;
-  /* height: 30em; */
   border-radius: 20px;
   overflow: hidden;
   position: relative;
@@ -209,7 +196,6 @@ main .marble-section .marble-image .overlay-text-live {
 
 main .marble-section .marble-image .overlay-text {
   position: absolute;
-  /* z-index: 1; */
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -222,7 +208,6 @@ main .marble-section .marble-image .overlay-text {
 main .marble-section .marble-image .overlay-text-bottom-dots {
   position: absolute;
   z-index: inherit;
-  /* z-index: 1; */
   bottom: 15px;
   width: 20%;
   margin-left: 41%;
@@ -269,7 +254,6 @@ main .marble-section .marble-image .overlay-text img {
 }
 
 .marble .last {
-  /* font-size: 0.9375em; */
   font-size: 1rem;
   color: rgb(34, 34, 34);
   line-height: 20px;
@@ -305,10 +289,6 @@ footer {
   overflow: hidden;
 }
 
-footer .footer-section-1 {
-  /* padding-top: 4%; */
-}
-
 footer .footer-section-1 .footer-heading p {
   font-size: 1.375rem;
   font-weight: 600;
@@ -332,7 +312,6 @@ footer .footer-slidebar .footer-slidebar-item {
 
 footer .footer-slidebar .footer-slidebar-item p {
   color: rgb(146, 146, 146);
-  /* font-weight: bold; */
   font-weight: 600;
   letter-spacing: 0.024em;
 }
@@ -365,7 +344,6 @@ footer .footer-section-detail .footer-heading-detail {
 
 footer .footer-section-detail {
   text-overflow: ellipsis;
-  /* border-bottom: 0.2px solid black; */
 }
 
 footer .footer-section-detail .row {
@@ -399,7 +377,6 @@ footer .footer-section-detail .footer-details {
 }
 
 .footer-tab-section .footer-tab-heading {
-  /* margin-bottom: 12px; */
   line-height: 1.125rem;
   font-size: 0.875rem;
   font-weight: 600;
@@ -421,7 +398,6 @@ footer .footer-section-detail .footer-details {
 footer .footer-tab-section ul li {
   list-style-type: none;
   letter-spacing: 0.03em;
-  /* width: fit-content; */
 }
 
 /* --------------- end footer section --------------- */
@@ -446,13 +422,11 @@ footer .end-footer .social-logo {
 }
 footer .end-footer .common-style-footer {
   color: rgb(109, 108, 108);
-  /* line-height: 1rem; */
   padding-top: 0.5rem;
 }
 
 footer .end-footer .privacy-terms {
   letter-spacing: 0.05em;
-  /* line-height: 1rem; */
 }
 
 footer .end-footer .dot {
@@ -501,20 +475,15 @@ footer .end-footer .last-end-footer-text::after {
 
   header .search-width-744 {
     width: 100%;
-    /* display: flex;
-        align-items: center;
-        justify-content: center; */
+
     display: grid;
-    /* justify-content: center; */
     align-items: center;
     grid-template-columns: repeat(12, 1fr);
-    /* background-color: rgb(224, 224, 224); */
   }
   header .airbnb-icon {
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* justify-content: center; */
   }
 
   header .airbnb-icon .company-name {
@@ -536,8 +505,6 @@ footer .end-footer .last-end-footer-text::after {
     justify-content: space-between;
     border-radius: 30px;
     padding: 14px;
-    /* padding-right: 0px; */
-    /* padding-left: 0px; */
     overflow: hidden;
     text-overflow: ellipsis;
     background-color: white;
@@ -590,7 +557,6 @@ footer .end-footer .last-end-footer-text::after {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* gap: 1.5em; */
   }
 
   .search-width-744 .airbnb-nav-right-section .nav-text {
@@ -641,7 +607,6 @@ footer .end-footer .last-end-footer-text::after {
   menu .slidebar {
     gap: 2.5rem;
     padding-left: 2em;
-    /* padding-top: 2rem; */
   }
 
   main {
@@ -651,8 +616,6 @@ footer .end-footer .last-end-footer-text::after {
   main .marble-section {
     width: 94%;
     margin: 3rem;
-    /* margin-left: 4.8rem; */
-    /* margin-right: 4.8rem; */
     margin-left: 1.7rem;
   }
 
@@ -692,7 +655,6 @@ footer .end-footer .last-end-footer-text::after {
   }
 
   .end-footer .language-country {
-    /* width: %; */
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -753,16 +715,10 @@ footer .end-footer .last-end-footer-text::after {
 
   .footer-tab-section {
     display: flex;
-    /* display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        gap: 8rem; */
+
     display: grid;
     grid-template-rows: repeat(1, 1fr);
     grid-template-columns: repeat(3, 1fr);
-    /* display: grid;
-        grid-template-rows: repeat(1, 1fr);
-        grid-template-columns: repeat(3, 1fr); */
   }
 
   .footer-tab-section ul:nth-child(1) {
@@ -805,12 +761,6 @@ footer .end-footer .last-end-footer-text::after {
     font-style: normal;
     letter-spacing: -1px;
   }
-
-  /* header .airbnb-icon {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    } */
 
   header .search-width-744 .airbnb-icon {
     grid-column: 1/7;
@@ -869,7 +819,6 @@ footer .end-footer .last-end-footer-text::after {
   }
 
   footer .end-footer .language-country {
-    /* background-color: red; */
     width: 19rem;
     display: flex;
     justify-content: center;
@@ -878,12 +827,6 @@ footer .end-footer .last-end-footer-text::after {
 }
 
 @media screen and (min-width: 1640px) {
-  /* body {
-        padding: 3rem;
-        padding-top: 1rem;
-        padding-bottom: 0;
-    } */
-
   header,
   menu,
   main {
@@ -905,7 +848,6 @@ footer .end-footer .last-end-footer-text::after {
   header .search-width-744 {
     display: grid;
     grid-template-columns: repeat(50, 1fr);
-    /* right: 15rem; */
   }
 
   header .search-width-744 .airbnb-icon .company-name {
@@ -932,16 +874,11 @@ footer .end-footer .last-end-footer-text::after {
   }
 
   main .marble-section {
-    /* margin-left: 4.5rem; */
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 1rem;
     margin-left: 4rem;
     margin-right: 4rem;
-  }
-
-  main .marble-section .marble .marble-image img {
-    /* aspect-ratio: 306/300; */
   }
 
   .main-section-heading p {
