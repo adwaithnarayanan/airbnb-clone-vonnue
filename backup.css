@@ -1,90 +1,22 @@
-@font-face {
-  font-family: "Airbnb Cereal VF";
-  src: url("https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-variable/AirbnbCerealVF_W_Wght.9c00198218646e3b3f345aa4bc3fda51.woff2")
-      format("woff2 supports variations"),
-    url("https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-variable/AirbnbCerealVF_W_Wght.9c00198218646e3b3f345aa4bc3fda51.woff2")
-      format("woff2-variations");
-  font-style: normal;
-  unicode-range: U+0000-03FF, U+0500-058F, U+0700-074F, U+0780-FAFF, U+FE00-FE6F,
-    U+FF00-EFFFF, U+FFFFE-10FFFF;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Airbnb Cereal VF";
-  src: url("https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-variable/AirbnbCerealVF_Italics_W_Wght.5bf3b3356a2ecabcfef6f3e31549ac15.woff2")
-      format("woff2 supports variations"),
-    url("https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-variable/AirbnbCerealVF_Italics_W_Wght.5bf3b3356a2ecabcfef6f3e31549ac15.woff2")
-      format("woff2-variations");
-  font-style: italic;
-  unicode-range: U+0000-03FF, U+0500-058F, U+0700-074F, U+0780-FAFF, U+FE00-FE6F,
-    U+FF00-EFFFF, U+FFFFE-10FFFF;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Airbnb Cereal VF";
-  unicode-range: U+0600-06FF, U+0750-077F;
-  font-style: normal;
-  src: url("https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-variable/AirbnbCerealVF_Arabic_W_Wght.ab0a4ad20fdb2bca9e39485001f65329.woff2")
-      format("woff2 supports variations"),
-    url("https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-variable/AirbnbCerealVF_Arabic_W_Wght.ab0a4ad20fdb2bca9e39485001f65329.woff2")
-      format("woff2-variations");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Airbnb Cereal VF";
-  unicode-range: U+0400-04FF;
-  font-style: normal;
-  src: url("https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-variable/AirbnbCerealVF_Cyril_W_Wght.a9f22da35972dbeb4d0373ba86e3a500.woff2")
-      format("woff2 supports variations"),
-    url("https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-variable/AirbnbCerealVF_Cyril_W_Wght.a9f22da35972dbeb4d0373ba86e3a500.woff2")
-      format("woff2-variations");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Airbnb Cereal VF";
-  unicode-range: U+0590-05FF, U+FB00-FB4F;
-  font-style: normal;
-  src: url("https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-variable/AirbnbCerealVF_Hebrew_W_Wght.f9f38717c80b9891a43a7e5d9f109365.woff2")
-      format("woff2 supports variations"),
-    url("https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-variable/AirbnbCerealVF_Hebrew_W_Wght.f9f38717c80b9891a43a7e5d9f109365.woff2")
-      format("woff2-variations");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Airbnb Cereal VF";
-  src: url("https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-variable/AirbnbCerealVF_W_Wght.9c00198218646e3b3f345aa4bc3fda51.woff2")
-      format("woff2 supports variations"),
-    url("https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-variable/AirbnbCerealVF_W_Wght.9c00198218646e3b3f345aa4bc3fda51.woff2")
-      format("woff2-variations");
-  font-style: normal;
-  font-display: swap;
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  box-sizing: border-box;
 }
 
 :root {
   --theme-color: rgb(236, 236, 236);
   --main-color: #ff385c;
-
-  --font-two: "Airbnb Cereal VF", Circular, -apple-system, BlinkMacSystemFont,
-    Roboto, "Helvetica Neue", sans-serif;
 }
 
 body {
-  font-family: var(--font-two);
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    Helvetica Neue, sans-serif;
   font-size: 0.875rem;
   line-height: 1.43;
-  color: #222222;
+  color: #222;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   display: block;
@@ -104,18 +36,24 @@ header {
 }
 
 header .search-area {
-  width: 100%;
-  height: 56px;
-  margin: 4px 24px 0;
-  display: flex;
-  align-items: center;
+  background-color: red;
+  width: 90%;
+  height: 50px;
+  display: grid;
+  grid-template-columns: repeat(15, 1fr);
+  gap: 2px;
+  margin-top: 20px;
   background-color: white;
   border-radius: 30px;
-  padding: 0 4px;
+  box-sizing: border-box;
   border: none;
-  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
-  border: 0.5px solid rgba(0, 0, 0, 0.08);
-  z-index: 10;
+  box-shadow: 0px 0px 17px rgb(221, 219, 219);
+  text-overflow: ellipsis;
+  position: fixed;
+  z-index: 1;
+  margin-top: 0px;
+  justify-content: center;
+  align-items: center;
 }
 
 header .search-width-744 {
@@ -123,19 +61,17 @@ header .search-width-744 {
 }
 
 header button .search-icon {
-  max-width: 52px;
-  min-width: 42px;
-  width: 100%;
-  height: 20px;
+  grid-column: 1/2;
+  width: 50px;
 }
 
 .search-icon img {
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
 }
 
 header button .search-text {
-  padding-left: 2px;
+  grid-column: 2/6;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -143,8 +79,8 @@ header button .search-text {
 
 button .search-text .search-area-line1 {
   align-items: start;
+  justify-content: left;
   width: max-content;
-  font-family: var(--font-two);
   color: #222222;
   font-size: 0.875rem;
   font-weight: 500;
@@ -152,95 +88,68 @@ button .search-text .search-area-line1 {
 }
 
 .search-text .search-area-line2 {
+  font-size: 0.75rem;
   width: max-content;
   color: #6a6a6a;
-  line-height: 1rem;
-  font-weight: 400;
-  line-height: 16px;
-  padding-right: 24px;
-}
-
-.search-text .search-area-line2 span {
-  min-width: 50px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  flex: 0 1 auto;
   font-size: 0.75rem;
-  letter-spacing: normal;
-  font-family: var(--font-two);
-}
-
-.search-area-line2 .dot {
-  font-size: 16px;
-  line-height: 15px;
-  margin: 0 5px;
+  line-height: 1rem;
 }
 
 /* --------------- Menu --------------- */
 menu {
   overflow: hidden;
   position: fixed;
-  z-index: 30;
+  z-index: 3;
   top: 70px;
-  background-color: transparent;
+  background-color: white;
   overflow-x: scroll;
   scrollbar-width: none;
-  padding: 0 24px;
-  border-bottom: 0.1px solid rgb(238, 236, 236);
-  background-color: #fff;
 }
 menu .slidebar {
   display: flex;
+  gap: 6rem;
   width: 150%;
-  gap: 26px;
+  padding-top: 1.5em;
+  padding-left: 1.5rem;
+  border-bottom: 0.1px solid rgb(238, 236, 236);
+  gap: 1rem;
 }
 
 menu .slidebar-item {
-  line-height: 16px;
-  gap: 2px;
-  min-width: 64px;
-  padding: 4px 0;
-  margin-top: 12px;
+  margin: 2px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-bottom: 12px;
+  padding-bottom: 10px;
 }
 
 menu .slidebar-item:nth-child(1) {
   border-bottom: 2px solid black;
-}
-
-menu .slidebar-item:nth-child(n + 2) {
-  padding-bottom: 14px;
+  margin-bottom: 0;
 }
 
 menu .slidebar-item img {
   width: 24px;
-  height: 26px;
   padding-bottom: 2px;
 }
 
 menu .slidebar-item p {
   font-size: 0.85em;
   color: gray;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 /* --------------- Main section --------------- */
-.container {
-  padding: 0 24px;
-}
 main {
   margin: 0;
   padding: 0;
   width: 100%;
   display: block;
-  margin-top: 165px;
+  margin-top: 13em;
 }
 
+main .marble-section,
 .main-section-heading p {
   width: 88%;
   margin: 4%;
@@ -524,6 +433,9 @@ footer .end-footer .dot {
   font-size: 10px;
 }
 
+footer .end-footer .last-end-footer-text::after {
+}
+
 /* --------------- Tablet view screen size --------------- */
 
 @media screen and (min-width: 550px) {
@@ -546,16 +458,16 @@ footer .end-footer .dot {
 }
 
 @media screen and (min-width: 744px) {
+  body {
+    padding-top: 1.2rem;
+  }
   header {
     width: 100%;
-    padding: 0 40px;
+    padding-left: 2em;
     display: flex;
     align-items: center;
-    height: 80px;
-  }
-
-  .container {
-    padding: 0 40px;
+    justify-content: left;
+    margin-bottom: 3px;
   }
   header .search-width-340 {
     display: none;
@@ -563,8 +475,10 @@ footer .end-footer .dot {
 
   header .search-width-744 {
     width: 100%;
-    display: flex;
+
+    display: grid;
     align-items: center;
+    grid-template-columns: repeat(12, 1fr);
   }
   header .airbnb-icon {
     display: flex;
@@ -590,131 +504,74 @@ footer .end-footer .dot {
     align-items: center;
     justify-content: space-between;
     border-radius: 30px;
-    min-width: 308.812px;
-    max-width: 350.094px;
-    width: 100%;
+    padding: 14px;
     overflow: hidden;
-    background-color: #ffff;
-    border: 1px solid #dddddd;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.05);
-    height: 48px;
-    padding-left: 8px;
+    text-overflow: ellipsis;
+    background-color: white;
+    border: 0.5px solid rgb(231, 231, 231);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.02),
+      0 4px 10px 0 rgba(0, 0, 0, 0.05);
+    height: 3.4rem;
+    width: 20rem;
   }
 
   header .search-width-744 button ul {
-    display: inline-flex;
-    align-items: center;
-    max-width: 100%;
-    text-align: left;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
   }
 
   header .search-width-744 button ul li {
     list-style-type: none;
-    display: flex;
-    align-items: center;
-    color: rgb(34, 34, 34);
-    display: flex;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 22px;
-    text-align: left;
-    padding: 0;
-    line-height: inherit;
-    margin: -1px;
-    flex: 0 1 auto;
-    height: 48px;
-    overflow: visible;
-    min-width: 0;
-  }
-
-  .search-textt {
-    font-family: var(--font-two);
-    display: flex;
-    text-align: center;
-    align-items: center;
-
-    max-width: 99.33px;
-    width: 100%;
-    padding: 0 16px;
-    flex: 1 1 auto;
     overflow: hidden;
-    white-space: nowrap;
     text-overflow: ellipsis;
-
-    line-height: 1.375rem;
-    font-size: 14px;
-
-    min-width: 80px;
   }
 
-  .search-button-line {
-    height: 24px;
-    width: 1px;
-    background-color: #dddddd;
+  .search-width-744 button ul li:nth-child(3) {
+    color: gray;
+  }
+
+  header .search-width-744 button ul li::after {
+    content: " | \00a0";
+    color: rgb(201, 198, 198);
+    font-size: larger;
   }
 
   header .search-width-744 button .search-icon {
     background-color: rgb(255, 36, 73);
-    /* width: 1.8rem;
-    height: 1.8rem; */
-    width: 32px;
-    height: 32px;
+    width: 1.8rem;
+    height: 1.8rem;
     border-radius: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
-    margin: 7px;
   }
 
-  header button .search-icon {
-    min-width: 0;
+  .search-width-744 button .search-icon img {
+    width: 0.9rem;
+    height: auto;
   }
 
   .search-width-744 .airbnb-nav-right-section {
-    flex: 1 0 auto;
-    height: 80px;
+    height: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
     align-items: center;
-  }
-
-  .airbnb-nav-right-section .xyz {
-    display: flex;
-    margin-right: 8px;
-    flex: 1 1 auto;
-    justify-content: flex-end;
   }
 
   .search-width-744 .airbnb-nav-right-section .nav-text {
-    font-size: 14px;
+    font-size: 1.05em;
     font-weight: 500;
-    padding: 12px;
-    width: 142.188px;
-    flex-wrap: nowrap;
-  }
-  .globe-logo {
-    width: 40px;
-    height: 42px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .globe-logo img {
-    width: 16px;
-    height: 16px;
   }
 
   .user-section {
     display: flex;
+    justify-content: space-around;
     align-items: center;
     height: 3rem;
-
+    width: 5.5rem;
     border-radius: 25px;
-    border: 1px solid #dddddd;
-    padding: 8px;
-    padding-left: 14px;
+    border: 1px solid rgb(197, 191, 191);
   }
 
   .user-section .burger-line,
@@ -722,12 +579,13 @@ footer .end-footer .dot {
     display: flex;
   }
 
-  .user-png {
-    margin-left: 14px;
+  .search-width-744 .airbnb-nav-right-section img {
+    width: 16.5px;
+    height: auto;
   }
 
   .search-width-744 .airbnb-nav-right-section .burger-line img {
-    width: 16px;
+    width: 1.1rem;
   }
 
   .search-width-744 .airbnb-nav-right-section .user-png img {
@@ -735,38 +593,20 @@ footer .end-footer .dot {
   }
 
   header .search-width-744 .icon {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    width: fit-content;
-    height: 64px;
-    flex: 0 0 auto;
-  }
-
-  header .search-width-744 .icon img {
-    width: 30px;
-    height: 30px;
-    scale: 1.1;
+    grid-column: 1/2;
   }
 
   header .search-width-744 .search-area-744 {
-    box-sizing: content-box;
-    padding: 0 24px;
-    flex: 1 1 auto;
-    min-width: 348px;
-    max-width: 350px;
+    grid-column: 2/7;
   }
 
-  menu {
-    border-top: 0.1px solid rgb(238, 236, 236);
-    top: 80px;
-    background-color: #fff;
-    height: 78px;
+  header .search-width-744 .airbnb-nav-right-section {
+    grid-column: 8/12;
   }
 
   menu .slidebar {
     gap: 2.5rem;
-    /* padding-left: 2em; */
+    padding-left: 2em;
   }
 
   main {
@@ -846,23 +686,20 @@ footer .end-footer .dot {
 
 @media screen and (min-width: 950px) {
   header .search-width-744 {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
   }
 
-  header .search-width-744 .airbnb-icon {
-    flex: 1 0 140px;
+  header .search-width-744 .icon {
+    grid-column: 1/2;
   }
 
-  header .search-width-744 .search-area-744 button {
-    transform-origin: 50% 50%;
-    margin: 0 auto;
-    transform: scale(1, 1) translateY(0);
-    vertical-align: middle;
+  header .search-width-744 .search-area-744 {
+    grid-column: 4/7;
   }
 
   header .search-width-744 .airbnb-nav-right-section {
-    flex: 1 0 140px;
+    grid-column: 8/11;
   }
 
   main .marble-section {
@@ -911,11 +748,8 @@ footer .end-footer .dot {
 
 @media screen and (min-width: 1128px) {
   header .search-width-744 {
-    display: flex;
-  }
-
-  header .search-width-744 .icon {
-    display: none;
+    display: grid;
+    grid-template-columns: repeat(25, 1fr);
   }
 
   header .airbnb-icon .company-name {
@@ -926,6 +760,18 @@ footer .end-footer .dot {
     font-weight: 700;
     font-style: normal;
     letter-spacing: -1px;
+  }
+
+  header .search-width-744 .airbnb-icon {
+    grid-column: 1/7;
+  }
+
+  header .search-width-744 .search-area-744 {
+    grid-column: 9/15;
+  }
+
+  header .search-width-744 .airbnb-nav-right-section {
+    grid-column: 19/25;
   }
 
   menu .slidebar {
@@ -976,18 +822,12 @@ footer .end-footer .dot {
     width: 19rem;
     display: flex;
     justify-content: center;
-    align-items: center;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  header,
-  .container {
-    padding: 0 80px;
+    align-items: center; 
   }
 }
 
 @media screen and (min-width: 1640px) {
+  header,
   menu,
   main {
     padding: 3rem;
@@ -998,6 +838,35 @@ footer .end-footer .dot {
   main {
     padding: 0;
     padding-top: em;
+  }
+
+  header {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  header .search-width-744 {
+    display: grid;
+    grid-template-columns: repeat(50, 1fr);
+  }
+
+  header .search-width-744 .airbnb-icon .company-name {
+    display: inline;
+  }
+
+  header .search-width-744 .airbnb-icon {
+    grid-column: 2/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header .search-width-744 .search-area-744 {
+    grid-column: 20/30;
+  }
+
+  header .search-width-744 .airbnb-nav-right-section {
+    grid-column: 39/48;
   }
 
   menu .slidebar {
@@ -1062,12 +931,6 @@ footer .end-footer .dot {
 }
 
 @media screen and (min-width: 1880px) {
-  header,
-  .container {
-    max-width: 2520px, 1760px;
-    margin: 0 auto;
-  }
-
   menu .slidebar {
     gap: 2.7rem;
   }
@@ -1088,3 +951,7 @@ footer .end-footer .dot {
     grid-column: 6/18;
   }
 }
+
+/***
+margin: 5px 1px  3px;
+*/
