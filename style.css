@@ -238,20 +238,25 @@ main {
   padding: 0;
   width: 100%;
   display: block;
-  margin-top: 165px;
+  margin-top: 158px;
 }
 
 .main-section-heading p {
   width: 88%;
-  margin: 4%;
-  margin-top: 0em;
-  margin-bottom: 0em;
+}
+
+main .marble-section {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 40px;
 }
 
 main .marble-section .marble {
   overflow: hidden;
-  display: block;
-  margin-top: 1.5em;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2px;
+  /* margin-top: 1.5em; */
 }
 
 main .marble-section .marble-image {
@@ -259,6 +264,7 @@ main .marble-section .marble-image {
   border-radius: 20px;
   overflow: hidden;
   position: relative;
+  aspect-ratio: 315.8/300;
 }
 
 main .marble-section .marble .marble-image img {
@@ -274,8 +280,8 @@ main .marble-section .marble-image .overlay-text-live {
   z-index: inherit;
   width: 50px;
   height: 30px;
-  top: 10px;
-  left: 10px;
+  top: 12px;
+  left: 12px;
   background-color: rgba(233, 233, 232, 0.952);
   border-radius: 50px;
   display: flex;
@@ -283,6 +289,7 @@ main .marble-section .marble-image .overlay-text-live {
   justify-content: center;
   font-size: 0.875rem;
   font-weight: 600;
+  padding: 14px 28px;
 }
 
 main .marble-section .marble-image .overlay-text {
@@ -290,8 +297,8 @@ main .marble-section .marble-image .overlay-text {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  top: 10px;
-  right: 10px;
+  top: 12px;
+  right: 12px;
   background-color: rgba(233, 233, 232, 0.952);
   z-index: inherit;
 }
@@ -330,41 +337,48 @@ main .marble-section .marble-image .overlay-text img {
 }
 
 .marble .marble-heading {
-  margin-top: 5px;
+  margin-top: 7px;
   font-size: 1em;
   font-weight: 550;
-  line-height: 20px;
+  line-height: 19px;
   color: #222222;
 }
 
 .marble .name {
-  line-height: inherit;
+  /* line-height: inherit; */
   overflow: clip;
   font-size: 0.905rem;
   color: gray;
+  line-height: 19px;
 }
 
 .marble .last {
-  font-size: 1rem;
+  font-size: 15px;
+  font-weight: 400;
   color: rgb(34, 34, 34);
-  line-height: 20px;
+  line-height: 19px;
 }
 
 .marble .last .last-insider {
-  font-weight: 550;
-  font-size: 0.9em;
+  font-weight: 500;
+  /* font-size: 0.9em; */
 }
 
 /* ---------------Main section for Past experience --------------- */
 
 #past-experiences {
   margin: 0px;
-  margin-top: 42px;
+  /* margin-top: 52px; */
+  margin: 52px 0 24px;
+}
+
+.main-section-heading {
+  margin-bottom: 24px;
 }
 
 .main-section-heading p {
-  font-size: 2em;
-  font-weight: 600;
+  font-size: 32px;
+  font-weight: 500;
   line-height: 2.25rem;
   letter-spacing: -0.64px;
 }
@@ -378,11 +392,13 @@ footer {
   padding-right: 3.8%;
   margin-top: 3.2rem;
   overflow: hidden;
+  padding-top: 48px;
 }
 
 footer .footer-section-1 .footer-heading p {
   font-size: 1.375rem;
-  font-weight: 600;
+  font-weight: 500;
+  letter-spacing: -0.22px;
 }
 
 footer .footer-section-1 .footer-slidebar {
@@ -766,7 +782,19 @@ footer .end-footer .dot {
 
   menu .slidebar {
     gap: 2.5rem;
-    /* padding-left: 2em; */
+  }
+  .main-body {
+    display: flex;
+    justify-content: center;
+  }
+
+  main .marble-section .marble .marble-image {
+    width: 100%;
+    aspect-ratio: 332/315.391;
+  }
+
+  main .marble-section .marble .marble-image img {
+    aspect-ratio: 332/315.391;
   }
 
   main {
@@ -774,9 +802,9 @@ footer .end-footer .dot {
   }
 
   main .marble-section {
-    width: 94%;
-    margin: 3rem;
-    margin-left: 1.7rem;
+    width: 100%;
+    /* margin: 3rem 0; */
+    margin-top: 3rem;
   }
 
   #past-experiences .marble-section {
@@ -784,7 +812,7 @@ footer .end-footer .dot {
   }
 
   .main-section-heading p {
-    margin-left: 1.5rem;
+    /* margin-left: 1.5rem; */
   }
   a footer {
     padding-left: 2rem;
@@ -985,6 +1013,10 @@ footer .end-footer .dot {
   .container {
     padding: 0 80px;
   }
+
+  /* #first-main {
+    margin-top
+  } */
 }
 
 @media screen and (min-width: 1640px) {
@@ -1008,12 +1040,12 @@ footer .end-footer .dot {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 1rem;
-    margin-left: 4rem;
-    margin-right: 4rem;
+    /* margin-left: 4rem;
+    margin-right: 4rem; */
   }
 
   .main-section-heading p {
-    margin-left: 5.2rem;
+    /* margin-left: 5.2rem; */
   }
 
   main .marble-section .marble {
@@ -1064,8 +1096,10 @@ footer .end-footer .dot {
 @media screen and (min-width: 1880px) {
   header,
   .container {
-    max-width: 2520px, 1760px;
-    margin: 0 auto;
+    max-width: 2360px;
+    /* margin: 0 auto; */
+    margin-left: auto;
+    margin-right: auto;
   }
 
   menu .slidebar {
