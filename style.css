@@ -1040,8 +1040,6 @@ footer .end-footer .dot {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 1rem;
-    /* margin-left: 4rem;
-    margin-right: 4rem; */
   }
 
   .main-section-heading p {
