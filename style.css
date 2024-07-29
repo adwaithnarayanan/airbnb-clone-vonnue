@@ -87,7 +87,6 @@ body {
   line-height: 1.43;
   color: #222222;
   margin: 0;
-  -webkit-font-smoothing: antialiased;
   display: flex;
   flex-direction: column;
 }
@@ -101,6 +100,9 @@ body {
   top: 0;
   z-index: 100;
   height: fit-content;
+  overflow-x: overlay;
+  left: 50%;
+  transform: translateX(-50%);
 }
 header {
   width: 100%;
@@ -380,7 +382,7 @@ main .marble-section .marble-image .overlay-text img {
 
 /* ---------------Main section for Past experience --------------- */
 
-#past-experiences {
+.past-experiences {
   margin: 0px;
   margin: 52px 0 24px;
 }
@@ -1077,6 +1079,7 @@ footer .end-footer .dot {
   }
   .social-logo {
     margin-left: 24px;
+    padding-left: 0;
   }
 
   footer .end-footer .privacy-terms {
@@ -1165,20 +1168,9 @@ footer .end-footer .dot {
   footer .end-footer .language-country {
     grid-column: 29/31;
   }
-
-  .social-logo {
-    padding-left: 0.5em;
-  }
 }
 
 @media screen and (min-width: 1880px) {
-  .container {
-    max-width: 2360px;
-    margin-left: auto;
-    margin-right: auto;
-    box-sizing: content-box;
-  }
-
   menu .slidebar {
     gap: 2.7rem;
   }
@@ -1188,8 +1180,7 @@ footer .end-footer .dot {
   }
 
   footer {
-    padding-left: 23.6rem;
-    padding-right: 23.6rem;
+    padding: 56px 386px 24px;
   }
   footer .end-footer .year-airbnb {
     grid-column: 1/6;
@@ -1197,5 +1188,13 @@ footer .end-footer .dot {
 
   footer .end-footer .privacy-terms {
     grid-column: 6/18;
+  }
+}
+
+@media screen and (min-width: 1740px) {
+  .container {
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
