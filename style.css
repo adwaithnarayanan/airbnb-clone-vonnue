@@ -227,6 +227,7 @@ menu .slidebar-item p {
   font-size: 0.85em;
   color: gray;
   font-weight: 500;
+  white-space: nowrap;
 }
 
 /* --------------- Main section --------------- */
@@ -238,7 +239,8 @@ main {
   padding: 0;
   width: 100%;
   display: block;
-  margin-top: 158px;
+  /* margin-top: 158px; */
+  margin-top: 166px;
 }
 
 .main-section-heading p {
@@ -265,6 +267,8 @@ main .marble-section .marble-image {
   overflow: hidden;
   position: relative;
   aspect-ratio: 315.8/300;
+
+  font-size: 15px;
 }
 
 main .marble-section .marble .marble-image img {
@@ -280,7 +284,7 @@ main .marble-section .marble-image .overlay-text-live {
   z-index: inherit;
   width: 50px;
   height: 30px;
-  top: 12px;
+  top: 14px;
   left: 12px;
   background-color: rgba(233, 233, 232, 0.952);
   border-radius: 50px;
@@ -289,26 +293,35 @@ main .marble-section .marble-image .overlay-text-live {
   justify-content: center;
   font-size: 0.875rem;
   font-weight: 600;
-  padding: 14px 28px;
+  padding: 16px 29px;
 }
 
 main .marble-section .marble-image .overlay-text {
   position: absolute;
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
-  top: 12px;
+  top: 14px;
   right: 12px;
   background-color: rgba(233, 233, 232, 0.952);
   z-index: inherit;
+
+  padding: 9.5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 main .marble-section .marble-image .overlay-text-bottom-dots {
   position: absolute;
   z-index: inherit;
-  bottom: 15px;
+  bottom: 10px;
   width: 20%;
-  margin-left: 41%;
+  /* margin-left: 41%; */
+  /* margin: 0 auto; */
+  left: 50%;
+  transform: translateX(-40%);
   letter-spacing: 0.18rem;
   color: rgba(240, 239, 239, 0.815);
   font-size: 0.84em;
@@ -319,9 +332,11 @@ main .marble-section .marble-image .overlay-text-bottom-dots .first-dot {
 }
 
 main .marble-section .marble-image .overlay-text img {
-  width: 12px;
-  height: 12px;
-  margin: 9px;
+  width: 13px;
+  height: 13px;
+  /* margin: 9px; */
+  /* margin: 0 auto; */
+  /* margin: 9.5px; */
 }
 
 .doja-img {
@@ -338,8 +353,9 @@ main .marble-section .marble-image .overlay-text img {
 
 .marble .marble-heading {
   margin-top: 7px;
-  font-size: 1em;
-  font-weight: 550;
+  /* font-size: 1em; */
+  font-size: 15px;
+  font-weight: 500;
   line-height: 19px;
   color: #222222;
 }
@@ -347,7 +363,8 @@ main .marble-section .marble-image .overlay-text img {
 .marble .name {
   /* line-height: inherit; */
   overflow: clip;
-  font-size: 0.905rem;
+  /* font-size: 0.905rem; */
+  font-size: 15px;
   color: gray;
   line-height: 19px;
 }
@@ -386,13 +403,20 @@ main .marble-section .marble-image .overlay-text img {
 /* --------------- Footer section 1 --------------- */
 footer {
   background-color: rgba(241, 241, 241, 0.74);
-  padding: 6%;
+  padding: 48px 24px;
+  /* padding: 6%;
   padding-bottom: 2%;
   padding-left: 1.6rem;
-  padding-right: 3.8%;
-  margin-top: 3.2rem;
+  padding-right: 3.8%; */
+  /* margin-top: 3.2rem; */
+  margin-top: 56px;
   overflow: hidden;
-  padding-top: 48px;
+  padding-top: 46px;
+}
+
+.footer-heading-section {
+  margin-bottom: 10px;
+  height: 26px;
 }
 
 footer .footer-section-1 .footer-heading p {
@@ -403,7 +427,7 @@ footer .footer-section-1 .footer-heading p {
 
 footer .footer-section-1 .footer-slidebar {
   display: flex;
-  gap: 1.1rem;
+  /* gap: 1.1rem; */
   flex-direction: row;
   align-items: center;
   width: 900%;
@@ -412,19 +436,34 @@ footer .footer-section-1 .footer-slidebar {
 
 footer .footer-slidebar .footer-slidebar-item {
   height: 100%;
-  padding-top: 0.8rem;
+  /* padding-top: 0.8rem;
   padding-bottom: 0.8rem;
-  margin-right: 10px;
+  margin-right: 10px; */
+  margin: 16px;
+  margin-bottom: 0px;
+  margin-top: 6px;
+  margin-left: 0px;
+  /* padding: 10px; */
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 6px;
 }
 
 footer .footer-slidebar .footer-slidebar-item p {
-  color: rgb(146, 146, 146);
-  font-weight: 600;
-  letter-spacing: 0.024em;
+  /* color: rgb(146, 146, 146); */
+  color: rgb(106, 106, 106);
+  font-weight: 500;
+  line-height: 18px;
+  /* letter-spacing: 0.024em; */
 }
 
 footer .footer-slidebar .footer-slidebar-item:nth-child(1) {
   border-bottom: 2.5px solid black;
+  margin-left: 0px;
+  padding-left: 0;
+  margin-bottom: 0;
+  padding-bottom: 13.5px;
 }
 
 footer .footer-section-detail {
@@ -798,7 +837,8 @@ footer .end-footer .dot {
   }
 
   main {
-    margin-top: 7.5rem;
+    /* margin-top: 7.5rem; */
+    margin-top: 124px;
   }
 
   main .marble-section {
