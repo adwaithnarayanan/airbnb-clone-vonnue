@@ -8,6 +8,9 @@
     <link rel="icon" href="assets/icons/airbnb-icon.png" />
   </head>
   <body>
+     
+    <div class="top-nav container">
+      
     <header>
       <button class="search-area search-width-340">
         <span class="search-icon">
@@ -64,7 +67,6 @@
               <img src="assets/icons/hamburger.svg" alt="" />
             </span>
             <span class="user-png">
-              <!-- <img src="assets/icons/user.png" alt="" /> -->
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 32px; width: 32px; fill: #6a6a6a;"><path d="M16 .7C7.56.7.7 7.56.7 16S7.56 31.3 16 31.3 31.3 24.44 31.3 16 24.44.7 16 .7zm0 28c-4.02 0-7.6-1.88-9.93-4.81a12.43 12.43 0 0 1 6.45-4.4A6.5 6.5 0 0 1 9.5 14a6.5 6.5 0 0 1 13 0 6.51 6.51 0 0 1-3.02 5.5 12.42 12.42 0 0 1 6.45 4.4A12.67 12.67 0 0 1 16 28.7z"></path></svg>
             </span>
           </span>
@@ -72,7 +74,7 @@
       </div>
     </header>
 
-    <menu class="container">
+    <menu >
       <div class="slidebar ">
         <span class="slidebar-item" style="min-width: 29.98px !important; ">
           <img src="assets/icons/airbnb_icons.webp" alt="" />
@@ -213,9 +215,10 @@
           <img src="assets/icons/farms_airbnb.jpg" alt="" />
           <p>Farms</p>
         </span>
-        
       </div>
     </menu>
+    
+    </div>
 
     <main class="container" id="first-main">
       <div class="main-body">
@@ -550,31 +553,39 @@
             ><p>Inspiration for future getaways</p></span
           >
         </div>
-        <div class="footer-slidebar">
-          <span class="footer-slidebar-item">
-            <p>Popular</p>
-          </span>
-          <span class="footer-slidebar-item">
-            <p>Arts & culture</p>
-          </span>
-          <span class="footer-slidebar-item">
-            <p>Outdoors</p>
-          </span>
-          <span class="footer-slidebar-item">
-            <p>Mountains</p>
-          </span>
-          <span class="footer-slidebar-item">
-            <p>Beach</p>
-          </span>
-          <span class="footer-slidebar-item">
-            <p>Unique stays</p>
-          </span>
-          <span class="footer-slidebar-item">
-            <p>Categories</p>
-          </span>
-          <span class="footer-slidebar-item">
-            <p>Things to do</p>
-          </span>
+        <div class="footer-slider-outer">
+          <div class="footer-slider">
+            <div class="footer-slidebar">
+              <span class="footer-slidebar-item">
+                <p>Popular</p>
+              </span>
+              <span class="footer-slidebar-item">
+                <p>Arts & culture</p>
+              </span>
+              <span class="footer-slidebar-item">
+                <p>Outdoors</p>
+              </span>
+              <span class="footer-slidebar-item">
+                <p>Mountains</p>
+              </span>
+              <span class="footer-slidebar-item">
+                <p>Beach</p>
+              </span>
+              <span class="footer-slidebar-item">
+                <p>Unique stays</p>
+              </span>
+              <span class="footer-slidebar-item">
+                <p>Categories</p>
+              </span>
+              <span class="footer-slidebar-item">
+                <p>Things to do</p>
+              </span>
+            </div>
+            
+          </div>
+          <div class="footer-slider-right-arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-label="scroll tabs forward" role="img" focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 3; overflow: visible;"><path fill="none" d="m12 4 11.3 11.3a1 1 0 0 1 0 1.4L12 28"></path></svg>
+          </div>
         </div>
         <div class="footer-section-detail">
           <div class="row">
@@ -651,10 +662,11 @@
           </div>
           <div class="show-more-section">
             <p>Show more</p>
+            <img src="assets/icons/down-arrow.svg" alt="">
           </div>
         </div>
 
-        <div class="footer-tab-section container">
+        <div class="footer-tab-section ">
           <ul class="support-section">
             <li><span class="footer-tab-heading">Support</span></li>
             <li>Help Centre</li>
@@ -683,12 +695,11 @@
           </ul>
         </div>
 
-        <div class="end-footer container">
+        <div class="end-footer ">
           <div class="language-country">
             <img class="footer-globe" src="assets/icons/globe.png" alt="" />
-            <span class="language-country-text">&nbsp; &nbsp;English (IN)</span>
-            &nbsp; &nbsp;&nbsp; &nbsp;
-            <span class="currency">₹ INR</span>
+            <span class="language-country-text">English (IN)</span>
+            <span class="currency"><span>₹</span>INR</span>
             <span class="social-logo">
               <img src="assets/icons/facebook (1).png" alt="" />
               <img src="assets/icons/twitter-sign (1).png" alt="" />
@@ -705,7 +716,6 @@
             <span class="dot">•</span>
             <span class="last-end-footer-text">Company details</span>
           </div>
-          <br />
         </div>
       </div>
     </footer>
